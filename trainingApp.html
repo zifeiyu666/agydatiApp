@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
 	<meta charset="UTF-8">
 	<meta name="viewport" id="viewport" content="user-scalable=no,width=1600px,target-densitydpi=device-dpi">
 	<script type="text/javascript" src='src/js/jquery-3.1.0.min.js'></script>
@@ -55,11 +55,44 @@
 			line-height: 4rem;
 
 		}
+		#loginBtn01,#loginBtn02,#loginClose,.loginEnter{
+			width:80%;
+			position:absolute;
+			left:10%;
+			top:70rem;
+			height:15rem;
+			opacity:0;
+		}
+		#loginBtn02{
+			top: 85rem;
+		}
+		#loginClose{
+			top:0;
+			left:0;
+			width:15rem;
+		}
+		.loginEnter{
+			top:60rem;
+			height:40rem;
+			display:none;
+		}
+
 	</style>
 
 </head>
 <body>
-	
+	<!-- 阅读简介 -->
+	<div class="modalModule bgc" id="login_wrap" style='left:0'>
+		<div class="backBtn modalClose"></div>
+		<img id='loginIndex' src="src/images/loginindex.png" width='100%' alt="">
+		<img id='login' class='myHide' src="src/images/login.png" width='100%' alt="">
+		<img id='regist' class='myHide' src="src/images/regist.png" width='100%' alt="">
+		<button class='loginEnter'>44</button>
+		<button id='loginBtn01'>11</button>
+		<button id='loginBtn02'>22</button>
+		<button id='loginClose'>33</button>
+		
+	</div>
 	<div class="swiper-container" id='main-swiper'>
 	    <div class="swiper-wrapper">
 	    	<!-- 主页 -->
@@ -155,9 +188,9 @@
 							</div>
 							<div class="col-xs-6 listNavBig listNav03 document">
 								<a href="#"></a>
-							</div>
+							</div> 
 						</div>
-					</div>
+					</div>  
 					<!-- fav -->
 					<div class="list">
 						<div class="listTitle listTitle04">
@@ -315,9 +348,7 @@
 							<div class="col-xs-3"><a href="#"></a></div>
 						</div>
 						<div id="my_function">
-							<div class="list_item"><a href="#">历史纪录</a></div>
 							<div class="list_item"><a href="#">我的足迹</a></div>
-							<div class="list_item"><a href="#">我的课表</a></div>
 							<div class="list_item"><a href="#">积分商城</a></div>
 							<div class="list_item" id='my-dna'><a href="#">DNA定制</a></div>
 							<div class="list_item"><a href="#">设置</a></div>
@@ -2458,6 +2489,30 @@ var swiper05 = new Swiper('#answerReview-swiper', {
 		
 		$(this).prev('.addIcon').show();
 	})
+
+	// 登录页
+	$('#loginBtn01').click(function(){
+		$('#login').show().siblings('img').hide();
+		$('#loginBtn01').hide();
+		$('#loginBtn02').hide();
+		$('.loginEnter').show();
+	})
+	$('#loginBtn02').click(function(){
+		$('#regist').show().siblings('img').hide();
+		$('#loginBtn01').hide();
+		$('#loginBtn02').hide();
+		$('.loginEnter').show();
+	})
+	$('#loginClose').click(function(){
+		$('#loginIndex').show().siblings('img').hide();
+		$('#loginBtn01').show();
+		$('#loginBtn02').show();
+		$('.loginEnter').hide();
+	})
+	$('.loginEnter').click(function(){
+		$("#login_wrap").hide();
+	})
+	fnModal('.loginEnter','#module_dna');
 
 
 </script>
