@@ -243,9 +243,19 @@ header #search label {
 }
 header #add_icon {
   display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background: url(../images/add_icon.png) no-repeat;
+  background-size: 5rem 5rem;
+  position: absolute;
+  top: 5.2rem;
+  right: 4.4rem;
+}
+header #sel_icon {
+  display: inline-block;
   width: 4.4rem;
   height: 4.4rem;
-  background: url(../images/add_icon.png) no-repeat;
+  background: url(../images/sel.png) no-repeat;
   background-size: 4.4rem 4.4rem;
   position: absolute;
   top: 5.2rem;
@@ -941,7 +951,14 @@ header #header_title {
 }
 #modal_indroduce_video .backBtn,
 #modal_indroduce_read .backBtn,
-#module_dna .backBtn {
+#module_dna .backBtn,
+#module_track .backBtn,
+#module_jifen_index .backBtn,
+#module_jifen_mingxi .backBtn,
+#module_jifen_choujiang .backBtn,
+#module_jifen_duihuan .backBtn,
+#module_jifen_youxi .backBtn,
+#module_jifen_youhui .backBtn {
   width: 16rem;
   height: 16rem;
   position: absolute;
@@ -950,7 +967,14 @@ header #header_title {
 }
 #modal_indroduce_video .startStudy,
 #modal_indroduce_read .startStudy,
-#module_dna .startStudy {
+#module_dna .startStudy,
+#module_track .startStudy,
+#module_jifen_index .startStudy,
+#module_jifen_mingxi .startStudy,
+#module_jifen_choujiang .startStudy,
+#module_jifen_duihuan .startStudy,
+#module_jifen_youxi .startStudy,
+#module_jifen_youhui .startStudy {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -1003,7 +1027,7 @@ header #header_title {
   box-shadow: 0px 0px 1px #ccc;
 }
 #modal_document .toolbar {
-  display: none !important;
+  display: none !addaimportant;
 }
 #modal_live .liveBottom {
   width: 100%;

@@ -77,6 +77,43 @@
 			display:none;
 		}
 
+		#jifenBtn01{
+			position: absolute;
+		    opacity: 0;
+		    width: 100%;
+		    height: 22rem;
+		    top: 78rem;
+		}
+		#jifenBtn02{
+			position: absolute;
+		    opacity: 0;
+		    width: 100%;
+		    height: 14rem;
+		    top: 105rem;
+		}
+		#jifenBtn03{
+			position: absolute;
+		    opacity: 0;
+		    width: 100%;
+		    height: 14rem;
+		    top: 120rem;
+		}
+		#jifenBtn04{
+			position: absolute;
+		    opacity: 0;
+		    width: 100%;
+		    height: 14rem;
+		    top: 135rem;
+		}
+		#jifenBtn05{
+			position: absolute;
+		    opacity: 0;
+		    width: 100%;
+		    height: 14rem;
+		    top: 150rem;
+		}
+		
+
 	</style>
 
 </head>
@@ -322,7 +359,7 @@
 							<div class='info_01 clearfix'>
 								<span class='photo pull-left'></span>
 								<div class='base_info pull-left'>
-									<h3 >子非鱼</h3>
+									<h3 >子非鱼<a style='width:20rem;margin-left:60px;font-size: 4rem'><img style='margin-right:10px;display:inline-block;margin-top:-5px' src="src/images/dengji.png" width=60 alt="">4级</a></h3>
 									<h5>
 										<span class='study_time'>学习时长 17小时</span>
 										<span>经验 696</span>
@@ -348,8 +385,8 @@
 							<div class="col-xs-3"><a href="#"></a></div>
 						</div>
 						<div id="my_function">
-							<div class="list_item"><a href="#">我的足迹</a></div>
-							<div class="list_item"><a href="#">积分商城</a></div>
+							<div class="list_item" id='my-track'><a href="#">我的足迹</a></div>
+							<div class="list_item" id='my-jifen'><a href="#">积分商城</a></div>
 							<div class="list_item" id='my-dna'><a href="#">DNA定制</a></div>
 							<div class="list_item"><a href="#">设置</a></div>
 						</div>
@@ -464,22 +501,7 @@
 							<a href="#"></a>
 						</div>
 					</div>
-					<div class="row listWrap">
-						<div class="col-xs-6 listNavBig listNav03 document">
-							<a href="#"></a>
-						</div>
-						<div class="col-xs-6 listNavBig listNav03 document">
-							<a href="#"></a>
-						</div>
-					</div>
-					<div class="row listWrap">
-						<div class="col-xs-6 listNavBig listNav03 document">
-							<a href="#"></a>
-						</div>
-						<div class="col-xs-6 listNavBig listNav03 document">
-							<a href="#"></a>
-						</div>
-					</div>
+
 				</div>
 				<!-- fav -->
 				<div class="list">
@@ -502,22 +524,7 @@
 							<a href="#"></a>
 						</div>
 					</div>
-					<div class="row listWrap">
-						<div class="col-xs-6 listNavBig listNav04 video">
-							<a href="#"></a>
-						</div>
-						<div class="col-xs-6 listNavBig listNav04 video">
-							<a href="#"></a>
-						</div>
-					</div>
-					<div class="row listWrap">
-						<div class="col-xs-6 listNavBig listNav04 video">
-							<a href="#"></a>
-						</div>
-						<div class="col-xs-6 listNavBig listNav04 document">
-							<a href="#"></a>
-						</div>
-					</div>
+
 				</div>
 			</section>
 	
@@ -1849,7 +1856,7 @@
 		<header>
 			<span id='arr_left' class='modalClose'></span>
 			<span id='header_title'>问答</span>
-			<span id='add_icon'></span>
+			<span id='sel_icon'></span>
 		</header>
 		<div class="subNav clearfix">
 			<span class='threeSpan'></span>
@@ -2276,6 +2283,47 @@
 		<img src="src/images/dna.png" alt="" width='100%'>
 	</div>
 
+	<!-- 我的足迹 -->
+	<div class="modalModule bgc" id="module_track">
+		<div class="backBtn modalClose"></div>
+		<img src="src/images/track.png" alt="" width='100%'>
+	</div>
+
+	<!-- 积分商城 -->
+	<div class="modalModule bgc" id="module_jifen_index">
+		<div class="backBtn modalClose"></div>
+		<img src="src/images/jifen-index.png" alt="" width='100%'>
+		<button id='jifenBtn01'>11</button>
+		<button id='jifenBtn02'>22</button>
+		<button id='jifenBtn03'>22</button>
+		<button id='jifenBtn04'>22</button>
+		<button id='jifenBtn05'>22</button>
+	</div>
+		<!-- 积分明细 -->
+		<div class="modalModule bgc" id="module_jifen_mingxi">
+			<div class="backBtn modalClose"></div>
+			<img src="src/images/jifen-mingxi.png" alt="" width='100%'>
+		</div>
+		<!-- 积分兑换 -->
+		<div class="modalModule bgc" id="module_jifen_duihuan">
+			<div class="backBtn modalClose"></div>
+			<img src="src/images/jifen-duihuan.png" alt="" width='100%'>
+		</div>
+		<!-- 积分抽奖 -->
+		<div class="modalModule bgc" id="module_jifen_choujiang">
+			<div class="backBtn modalClose"></div>
+			<img src="src/images/jifen-choujiang.png" alt="" width='100%'>
+		</div>
+		<!-- 积分游戏 -->
+		<div class="modalModule bgc" id="module_jifen_youxi">
+			<div class="backBtn modalClose"></div>
+			<img src="src/images/jifen-youxi.png" alt="" width='100%'>
+		</div>
+		<!-- 积分优惠 -->
+		<div class="modalModule bgc" id="module_jifen_youhui">
+			<div class="backBtn modalClose"></div>
+			<img src="src/images/jifen-youhui.png" alt="" width='100%'>
+		</div>
 	<footer ID='footer'>
 		<div class="row">
 			<div class="col-xs-4 footerItem">
@@ -2406,6 +2454,13 @@ var swiper05 = new Swiper('#answerReview-swiper', {
 	fnModal('.class_content','#module_readDetail');
 	fnModal('.more','#module_more');
 	fnModal('#my-dna','#module_dna');
+	fnModal('#my-track','#module_track');
+	fnModal('#my-jifen','#module_jifen_index');
+		fnModal('#jifenBtn01','#module_jifen_mingxi');
+		fnModal('#jifenBtn02','#module_jifen_duihuan');
+		fnModal('#jifenBtn03','#module_jifen_choujiang');
+		fnModal('#jifenBtn04','#module_jifen_youxi');
+		fnModal('#jifenBtn05','#module_jifen_youhui');
 
 
 	/*function fnSubTab(obj1,obj2,obj3,len01,len02){
