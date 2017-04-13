@@ -359,7 +359,7 @@
 							<div class='info_01 clearfix'>
 								<span class='photo pull-left'></span>
 								<div class='base_info pull-left'>
-									<h3 >子非鱼<a style='width:20rem;margin-left:60px;font-size: 4rem'><img style='margin-right:10px;display:inline-block;margin-top:-5px' src="src/images/dengji.png" width=60 alt="">4级</a></h3>
+									<h3 >子非鱼<a id='huiyuandengji' style='width:20rem;margin-left:60px;font-size: 4rem'><img style='margin-right:10px;display:inline-block;margin-top:-5px' src="src/images/dengji.png" width=60 alt="">4级</a></h3>
 									<h5>
 										<span class='study_time'>学习时长 17小时</span>
 										<span>经验 696</span>
@@ -1904,7 +1904,52 @@
 			<img src="src/images/add.png" width='100%' alt="">
 		</div>	
 	</div>
+		<!-- 问答分类 -->
+		<div class="modalModule bgc" id="module_wendaclass" style='background: none'>
+			<div class="modalClose wendaClass" style='height:100%'>
+				
+			</div>
+			<div class='wendaTip'>
+				<ul>
+					<span class='tag'>全部</span>
+					<span class='tag'>教育培训</span>
 
+					<span class='tag'>风险管理</span>
+
+					<span class='tag'>承包商管理</span>
+
+					<span class='tag'>安保基金</span>
+
+					<span class='tag'>材料速递</span>
+
+					<span class='tag'>监管机制</span>
+
+					<span class='tag'>三同时管理</span>
+
+					<span class='tag'>事故管理</span>
+
+					<span class='tag'>隐患治理</span>
+
+					<span class='tag'>高级化工工程员</span>
+
+					<span class='tag'>助理化工工程师</span>
+
+					<span class='tag'>化工工程师</span>
+
+					<span class='tag'>高级化工工程师</span>
+
+					<span class='tag'>暖通工程师</span>
+
+					<span class='tag'>注册化工工艺工程师</span>
+
+					<span class='tag'>注册安全工程师</span>
+
+					<span class='tag'>安全管理资格证</span>
+
+					<span class='tag'>注册化工工程师</span>
+				</ul>
+			</div>
+		</div>
 
 	<!-- 经验 -->
 	<div class="modalModule bgc" id="modal_jingyan">
@@ -2324,6 +2369,11 @@
 			<div class="backBtn modalClose"></div>
 			<img src="src/images/jifen-youhui.png" alt="" width='100%'>
 		</div>
+	<!-- 会员等级 -->
+	<div class="modalModule bgc" id="module_huiyuan">
+		<div class="backBtn modalClose"></div>
+		<img src="src/images/huiyaun.png" alt="" width='100%'>
+	</div>
 	<footer ID='footer'>
 		<div class="row">
 			<div class="col-xs-4 footerItem">
@@ -2435,6 +2485,8 @@ var swiper05 = new Swiper('#answerReview-swiper', {
 	fnModal('#readBtn','#modal_read');
 	fnModal('#datiBtn','#modal_dati');
 	fnModal('#wendaBtn','#modal_wenda');
+			fnModal('#sel_icon','#module_wendaclass');
+			 
 	//经验暂时取消
 	//fnModal('#jingyanBtn','#modal_jingyan');
 	fnModal('#moreQuestion','#modal_question');
@@ -2461,7 +2513,7 @@ var swiper05 = new Swiper('#answerReview-swiper', {
 		fnModal('#jifenBtn03','#module_jifen_choujiang');
 		fnModal('#jifenBtn04','#module_jifen_youxi');
 		fnModal('#jifenBtn05','#module_jifen_youhui');
-
+	fnModal('#huiyuandengji','#module_huiyuan')
 
 	/*function fnSubTab(obj1,obj2,obj3,len01,len02){
 		$(obj1).click(function(){

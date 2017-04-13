@@ -956,9 +956,11 @@ header #header_title {
 #module_jifen_index .backBtn,
 #module_jifen_mingxi .backBtn,
 #module_jifen_choujiang .backBtn,
+#module_huiyuan .backBtn,
 #module_jifen_duihuan .backBtn,
 #module_jifen_youxi .backBtn,
-#module_jifen_youhui .backBtn {
+#module_jifen_youhui .backBtn,
+#module_wendaclass .backBtn {
   width: 16rem;
   height: 16rem;
   position: absolute;
@@ -972,9 +974,11 @@ header #header_title {
 #module_jifen_index .startStudy,
 #module_jifen_mingxi .startStudy,
 #module_jifen_choujiang .startStudy,
+#module_huiyuan .startStudy,
 #module_jifen_duihuan .startStudy,
 #module_jifen_youxi .startStudy,
-#module_jifen_youhui .startStudy {
+#module_jifen_youhui .startStudy,
+#module_wendaclass .startStudy {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -1122,6 +1126,23 @@ header #header_title {
   padding: 1rem 2rem;
   border-radius: 4rem;
   box-shadow: 1px 1px 0.6rem #ccc inset;
+}
+#module_wendaclass .wendaClass {
+  width: 100%;
+  hieght: 100%;
+  background: #000;
+  opacity: 0.6;
+}
+#module_wendaclass .wendaTip {
+  position: absolute;
+  top: 14rem;
+  width: 100%;
+  height: 50%;
+  background: #fff;
+  border-radius: 1rem;
+}
+#module_wendaclass .wendaTip ul {
+  margin: 1rem 7rem;
 }
 .jingyanList {
   padding: 5rem 5rem;
